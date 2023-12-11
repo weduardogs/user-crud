@@ -1,0 +1,60 @@
+2023-12-08 17:15:26,733 - INFO - D:\Python_Exercises\user-admin\user_project\user_admin\services\impl\user_service_impl.py changed, reloading.
+2023-12-08 17:15:29,642 - ERROR - Internal Server Error: /user/get-by-id/4
+Traceback (most recent call last):
+  File "C:\Users\52553\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\52553\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\52553\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python_Exercises\user-admin\user_project\user_admin\views\user_view.py", line 10, in get_user_by_id
+    response = UserImpl.get_by_id(id)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python_Exercises\user-admin\user_project\user_admin\services\impl\user_service_impl.py", line 17, in get_by_id
+    UserImpl.logger.logging.info('User name:' + user.get('name'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'info'
+2023-12-08 17:16:03,552 - INFO - D:\Python_Exercises\user-admin\user_project\user_admin\utils\logging_helper.py changed, reloading.
+2023-12-08 17:16:59,140 - INFO - D:\Python_Exercises\user-admin\user_project\user_admin\services\impl\user_service_impl.py changed, reloading.
+2023-12-08 17:17:02,048 - ERROR - Internal Server Error: /user/get-by-id/4
+Traceback (most recent call last):
+  File "C:\Users\52553\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\52553\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\52553\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python_Exercises\user-admin\user_project\user_admin\views\user_view.py", line 10, in get_user_by_id
+    response = UserImpl.get_by_id(id)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python_Exercises\user-admin\user_project\user_admin\services\impl\user_service_impl.py", line 15, in get_by_id
+    Logger.logging.info('User name:' + user.get('name'))
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'info'
+2023-12-08 17:22:35,936 - INFO - D:\Python_Exercises\user-admin\user_project\user_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python_Exercises\user-admin\user_project\user_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python_Exercises\user-admin\user_project\user_admin\services\impl\user_service_impl.py changed, reloading.
+Watching for file changes with StatReloader
+User name:Arthur Morgan
+D:\Python_Exercises\user-admin\user_project\user_admin\services\impl\user_service_impl.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\Python_Exercises\user-admin\user_project\user_admin\views\user_view.py changed, reloading.
+D:\Python_Exercises\user-admin\user_project\user_admin\views\user_view.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User does not exist
+Internal Server Error: /user/get-by-id/10
+D:\Python_Exercises\user-admin\user_project\user_admin\services\impl\user_service_impl.py changed, reloading.
+D:\Python_Exercises\user-admin\user_project\user_admin\services\impl\user_service_impl.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
